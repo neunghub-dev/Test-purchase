@@ -3,6 +3,8 @@
 // found in the LICENSE file.
 
 import 'dart:async';
+import 'dart:convert';
+import 'dart:developer';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
@@ -24,15 +26,15 @@ void main() {
 // To try without auto-consume on another platform, change `true` to `false` here.
 final bool _kAutoConsume = Platform.isIOS || true;
 
-const String _kConsumableId = 'consumable';
+const String _kConsumableId = 'com.text.purchase.test1';
 const String _kUpgradeId = 'upgrade';
 const String _kSilverSubscriptionId = 'subscription_silver';
 const String _kGoldSubscriptionId = 'subscription_gold';
 const List<String> _kProductIds = <String>[
   _kConsumableId,
-  _kUpgradeId,
-  _kSilverSubscriptionId,
-  _kGoldSubscriptionId,
+  // _kUpgradeId,
+  // _kSilverSubscriptionId,
+  // _kGoldSubscriptionId,
 ];
 
 class _MyApp extends StatefulWidget {
@@ -92,6 +94,7 @@ class _MyAppState extends State<_MyApp> {
 
     final ProductDetailsResponse productDetailResponse =
         await _inAppPurchase.queryProductDetails(_kProductIds.toSet());
+    inspect(productDetailResponse);
     if (productDetailResponse.error != null) {
       setState(() {
         _queryProductError = productDetailResponse.error!.message;
