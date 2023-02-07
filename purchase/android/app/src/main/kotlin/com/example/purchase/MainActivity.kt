@@ -1,4 +1,4 @@
-package com.text.purchase
+package com.text.testzawow666
 
 import io.flutter.embedding.android.FlutterActivity
 

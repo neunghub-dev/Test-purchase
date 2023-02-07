@@ -26,13 +26,13 @@ void main() {
 // To try without auto-consume on another platform, change `true` to `false` here.
 final bool _kAutoConsume = Platform.isIOS || true;
 
-const String _kConsumableId = 'com.text.purchase.test1';
+const String _kConsumableId = 'com.text.testzawow666.test1';
 const String _kUpgradeId = 'upgrade';
 const String _kSilverSubscriptionId = 'subscription_silver';
 const String _kGoldSubscriptionId = 'subscription_gold';
 const List<String> _kProductIds = <String>[
   _kConsumableId,
-  // _kUpgradeId,
+  _kUpgradeId,
   // _kSilverSubscriptionId,
   // _kGoldSubscriptionId,
 ];
