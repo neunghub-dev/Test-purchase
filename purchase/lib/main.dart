@@ -28,7 +28,7 @@ final bool _kAutoConsume = Platform.isIOS || true;
 
 const String _kConsumableId = 'com.text.testzawow666.test1';
 const String _item2 = "com.text.testzawow666.test2";
-const String _kUpgradeId = 'super-wow-za';
+const String _sub1 = 'subscription_silver';
 const String _kSilverSubscriptionId = 'com.text.testzawow666.sub2';
 const String _kGoldSubscriptionId = 'subscription_gold';
 const String newItem = "ok_item";
@@ -36,7 +36,7 @@ const List<String> _kProductIds = <String>[
   newItem,
   _kConsumableId,
   _item2,
-  _kUpgradeId,
+  _sub1,
   _kSilverSubscriptionId
   // _kGoldSubscriptionId,
 ];
